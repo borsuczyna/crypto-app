@@ -1,0 +1,70 @@
+:root {
+    --background: rgba(247, 247, 249, 1);
+    
+    --sidebar-background: rgba(247, 247, 249, 1);
+    --sidebar-width: 16.5rem;
+
+    /* option icon */
+    --option-active: rgba(10, 4, 28, 1);
+    --option-inactive: rgba(10, 4, 28, 0.4);
+    
+    /* option */
+    --option-background: rgba(255, 255, 255, 0);
+
+    /* option hover */
+    --option-hover-background: rgba(255, 255, 255, 1);
+    --option-hover-border: 1px solid rgb(240, 240, 240);
+    
+    /* option active */
+    --option-active-background: rgba(255, 255, 255, 1);
+    --option-active-border: 1px solid rgba(235, 235, 243, 1);
+
+    --notifications-background: rgba(234, 77, 77, 1);
+    --notifications-color: rgb(255, 255, 255);
+
+    --element-background: rgba(247, 247, 249, 1);
+    --element-border: rgba(229, 229, 229, 0);
+
+    /* scrollbar */
+    --scrollbar-color: #d9d9d9;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+    font-weight: normal;
+}
+
+body {
+    min-height: 100vh;
+    color: var(--color-text);
+    background: var(--color-background);
+    transition: color 0.5s, background-color 0.5s;
+    line-height: 1.6;
+    font-family: 'SF Pro Display';
+    font-size: 15px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* max-height: 100vh; */
+    overflow: hidden;
+}
+
+@media (max-width: 600px) {
+    body {
+        overflow-y: scroll;
+    }
+}
+
+a {
+    text-decoration: none;
+}
