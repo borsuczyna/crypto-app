@@ -49,6 +49,9 @@ onUnmounted(() => {
         </div>
         <Summary v-if="isMobile" :chartData="chartData" :chartLabels="chartLabels"/>
         <Table v-if="!isMobile" :listings="listings" :updateChartData="updateChartData"/>
+        <div v-if="isMobile" :style="{
+            marginBottom: '0.5rem'
+        }"></div>
     </div>
 </template>
 
